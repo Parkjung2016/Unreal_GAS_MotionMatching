@@ -1,0 +1,24 @@
+﻿#pragma once
+
+#include "NativeGameplayTags.h"
+
+namespace UPGamePlayTags
+{
+	UP_API FGameplayTag FindTagByString(const FString& TagString, bool bMatchPartialString = false);
+
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Cooldown);
+
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Move);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Attack);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Look);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Run);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Dodge);
+
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Event_ComboWindowOpen);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Event_ComboWindowEnd);
+	
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_ComboWindow);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Attack_1);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Attack_2);
+	UP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Attack_3);
+}
